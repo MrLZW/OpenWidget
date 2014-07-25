@@ -153,7 +153,7 @@ public class SlideListView extends ListView{
 
 			if (scroller.isFinished()) {
 				if (slideListener == null) {
-					throw new NullPointerException("RemoveListener is null, we should called setRemoveListener()");
+				
 				}
 				goalItemView.scrollTo(0, 0);
 				slideListener.afterSlide(goalItemView);
